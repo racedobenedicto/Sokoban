@@ -31,3 +31,26 @@ void printf_color(int color) {
 		case BOLD_RED:
 			printf(ANSI_COLOR_BOLD   ); printf(ANSI_COLOR_RED    ); break;
 		case BOLD_GREEN:
+printf(ANSI_COLOR_BOLD   ); printf(ANSI_COLOR_GREEN  ); break;
+		case BOLD_YELLOW:
+			printf(ANSI_COLOR_BOLD   ); printf(ANSI_COLOR_YELLOW ); break;
+		case BOLD_BLUE:
+			printf(ANSI_COLOR_BOLD   ); printf(ANSI_COLOR_BLUE   ); break;
+		case BOLD_MAGENTA:
+			printf(ANSI_COLOR_BOLD   ); printf(ANSI_COLOR_MAGENTA); break;
+		case BOLD_CYAN:
+			printf(ANSI_COLOR_BOLD   ); printf(ANSI_COLOR_CYAN   ); break;
+		case BOLD_WHITE:
+			printf(ANSI_COLOR_BOLD   ); printf(ANSI_COLOR_WHITE  ); break;
+	}
+}
+
+void printf_reset_color() {
+	printf(ANSI_COLOR_RESET);
+}
+
+/*
+void clear_screen() {
+	printf("\e[1;1H\e[2J");
+}
+*/
