@@ -1,9 +1,3 @@
-// Este fichero se le da al alumno
-// Testeado con Linux, Mac y Windows con DevC++ (que utiliza MinGw)
- 
-// Si dice algo como "conio.h no such header file" mirar:
-	// https://helloacm.com/modern-getch-implementation-on-windows-cc/
-// https://stackoverflow.com/questions/10463201/getch-and-arrow-codes
 #include <stdio.h>	// for getchar();
 #if defined(_WIN32) || defined(_WIN64)
 #include <conio.h>	// for getch();
@@ -13,7 +7,7 @@
 #include "teclas.h"
 
 void borrar_pantalla() {
-// https://stackoverflow.com/questions/2347770/how-do-you-clear-the-console-screen-in-c
+
 #if defined(__linux__)
 	// This will work on ANSI terminals, demands POSIX
 	printf("\e[1;1H\e[2J");
